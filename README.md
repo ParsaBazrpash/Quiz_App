@@ -1,2 +1,2 @@
-# Quiz_App
-This would be my first website that I create to just practice my skills. This website include a question page that has some basic questions that you can read them and take the quiz and see your grade.
+# Quiz-Website
+This would be the first website that I create to practice my skills. This website includes a question page with some basic questions you can read ,and take the quiz, and see your grade at the end of that.
