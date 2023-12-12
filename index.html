@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="mainbox">
+            <div class="mainbox-header">
+                Contact with us!
+              </div>
+            <form>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Write your first name..." required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Write your last name..." required>
+
+          
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Write your email..." required>
+          
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" placeholder="Select your date of birth..." required>
+          
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Choose a username..." required>
+          
+                <label for="password" class="password-toggle">Password:
+                    <input type="password" id="password" name="password" placeholder="Create a password..." required>
+                    <i class="far fa-eye" onclick="togglePasswordVisibility()"></i> </label>
+                          
+                <button type="submit">Submit</button>
+              </form>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+        <script>
+    let passwordInput = document.getElementById('password');
+    let eyeIcon = document.getElementById('eye-toggle');
+    
+    function togglePasswordVisibility() {
+      passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+      eyeIcon.innerHTML = passwordInput.type === 'password' 
+        ? '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="eye-icon"><path d="M18 12C18 14.973 15.194 17 12 17C8.806 17 6 14.973 6 12M12 2C6.48 2 2 6.486 2 12s4.48 10 10 10 10-4.486 10-10S17.52 2 12 2zm-2 7a2 2 0 1 1 4 0a2 2 0 1 1-4 0z"/></svg>'
+        : '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="eye-slash-icon"><path d="M15 13.8C15 13.8 14.0572 15 12 15C9.94279 15 9 13.8 9 13.8m5.7-5.7C15.6998 8.69983 13.8998 8 12 8C10.1002 8 8.30017 8.69983 7.19995 9.9M2 2L21 21" /></svg>';
+    }
+  </script>
+    </body>
+</html>
