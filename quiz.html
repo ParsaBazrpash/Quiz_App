@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Quiz</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/quiz.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/questions.html">Questions</a></li>
+                <li><a href="../html/quiz.html">Quiz</a></li>
+                <li><a href="#">Grades</a></li>
+                <li><a href="../html/index.html">Contact</a></li>
+            </ul>
+          </nav>
+        <div class="quiz-container"> 
+            <h1>Web Development Quiz</h1>
+            <h4>Are you ready? Please enter the number of questions (between 1 to 10)</h4>
+            <label for="numQuestions">Number of Questions:</label>
+            <input type="number" id="numQuestions" min="1" max="10">
+            <button onclick="generateQuiz()">Generate Quiz</button>
+
+                 <div id="quizContainer">
+            
+                 </div>
+
+                <div id="resultContainer">
+            
+                </div>
+
+            <button onclick="gradeQuiz()">Submit</button>
+    </div>
+
+        
+
+        <script src="../js/quiz.js"></script>
+    </body>
+</html>
